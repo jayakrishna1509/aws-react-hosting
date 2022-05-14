@@ -1,0 +1,74 @@
+.sideNav {
+    background-image: linear-gradient(to left, #4B2C4C , #151F28);
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    margin-top: 0%;
+    cursor: pointer;
+    z-index: 2;
+    transition: ease-in-out 0.2s;
+}
+
+.sideNav:hover {
+    width: 230px;
+}
+
+.sideNav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110vh;
+    padding: 15px;
+}
+
+.sideNav ul li {
+    list-style: none;
+    margin: 35px 0px;
+}
+
+.sideNav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sideNav ul li a:hover {
+    color: #4099ff;
+}
+
+.sideNav ul li a.active {
+    color: #eeb626;
+}
+
+.icons-title {
+    width: 250px;
+    margin: auto;
+}
+
+.icons-title i {
+    font-size: 24px;
+    float: left;
+    width: 30%;
+}
+
+.icons-title h4 {
+    white-space: nowrap;
+    float: left;
+    width: 50%;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.sideNav:hover .icons-title h4 {
+    animation: fadeInAnimation ease 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
